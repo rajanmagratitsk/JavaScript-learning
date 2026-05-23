@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <h2>JavaScript Addition Calculator</h2>
+  <button onclick="addNumbers()">Add Two Numbers</button>
+
+  <script>
+    function addNumbers() {
+      let num1 = prompt("Enter the first number:");
+      let num2 = prompt("Enter the second number:");
+      
+      // Convert input strings to numbers
+      num1 = Number(num1);
+      num2 = Number(num2);
+
+      let sum = num1 + num2;
+      alert("The sum is: " + sum);
+    }
+  </script>
+</body>
+</html>
