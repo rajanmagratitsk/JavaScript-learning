@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Concatenation</title>
+</head>
+<body>
+  <h2>String Concatenation Example</h2>
+
+  <label>Enter first string: </label>
+  <input type="text" id="str1"><br><br>
+
+  <label>Enter second string: </label>
+  <input type="text" id="str2"><br><br>
+
+  
+  <button onclick="concatenateStrings()">Concatenate</button>
+
+
+  <p id="result"></p>
+
+  <script>
+    function concatenateStrings() {
+     
+      let s1 = document.getElementById("str1").value;
+      let s2 = document.getElementById("str2").value;
+
+    
+      let combined = s1 + " " + s2;
+
+    
+      document.getElementById("result").innerHTML = 
+        "Concatenated String: " + combined;
+    }
+  </script>
+</body>
+</html>
