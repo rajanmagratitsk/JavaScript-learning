@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Case Conversion</title>
+</head>
+<body>
+  <h2>String Case Conversion Example</h2>
+  <p id="original"></p>
+  <p id="upper"></p>
+  <p id="lower"></p>
+
+  <script>
+    
+    let text = "Hello Rajan, Welcome to JavaScript!";
+
+    // Show original string
+    document.getElementById("original").innerHTML = "Original String: " + text;
+
+    // Convert to uppercase
+    let upperText = text.toUpperCase();
+    document.getElementById("upper").innerHTML = "Uppercase: " + upperText;
+
+    // Convert to lowercase
+    let lowerText = text.toLowerCase();
+    document.getElementById("lower").innerHTML = "Lowercase: " + lowerText;
+  </script>
+</body>
+</html>
