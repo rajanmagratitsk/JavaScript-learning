@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="filter"></p>
+<script>
+  let numbers = [10, 25, 30, 45];
+  let result = numbers.filter(function(n){ return n > 20; });
+  document.getElementById("filter").innerHTML = "Filter (>20): " + result;
+</script>
+</body>
+</html>
