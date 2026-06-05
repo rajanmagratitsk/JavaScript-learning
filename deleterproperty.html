@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="del"></p>
+<script>
+  let person = {name: "Alex", age: 25, city: "Kathmandu"};
+  delete person.city;
+  document.getElementById("del").innerHTML = "After delete: " + JSON.stringify(person);
+</script>
+</body>
+</html>
