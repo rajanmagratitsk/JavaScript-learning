@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="loop"></p>
+<script>
+  let student = {name: "Rajan", age: 21, course: "BCA"};
+  let text = "";
+  for (let key in student) {
+    text += key + ": " + student[key] + "<br>";
+  }
+  document.getElementById("loop").innerHTML = text;
+</script>
+</body>
+</html>
