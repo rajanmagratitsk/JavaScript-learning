@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="constructor"></p>
+<script>
+  function Person(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  let p1 = new Person("Rajan", 21);
+  document.getElementById("constructor").innerHTML = "Person: " + p1.name + ", Age: " + p1.age;
+</script>
+</body>
+</html>
