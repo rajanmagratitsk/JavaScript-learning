@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="nested"></p>
+<script>
+  let company = {
+    name: "TechNepal",
+    address: { city: "Kathmandu", country: "Nepal" }
+  };
+  document.getElementById("nested").innerHTML = 
+    "Company: " + company.name + ", City: " + company.address.city;
+</script>
+</body>
+</html>
