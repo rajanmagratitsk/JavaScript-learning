@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="word" placeholder="Enter word">
+  <button onclick="find()">Search</button>
+  <p id="res"></p>
+  <script>
+    let dict = {JS:"JavaScript", HTML:"HyperText Markup Language", CSS:"Cascading Style Sheets"};
+    function find(){
+      let w=document.getElementById("word").value;
+      document.getElementById("res").innerText = dict[w] || "Not Found!";
+    }
+  </script>
+</body>
+</html>
