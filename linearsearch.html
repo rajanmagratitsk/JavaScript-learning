@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    function search(arr,x){
+      for(let i=0;i<arr.length;i++) if(arr[i]===x) return i;
+      return -1;
+    }
+    document.getElementById("out").innerText = "Index = " + search([10,20,30,40],30);
+  </script>
+</body>
+</html>
