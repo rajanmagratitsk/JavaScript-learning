@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    let promise=new Promise((resolve,reject)=>{
+      let success=true;
+      success?resolve("Task Completed!"):reject("Task Failed!");
+    });
+    promise.then(msg=>document.getElementById("out").innerText=msg)
+           .catch(err=>document.getElementById("out").innerText=err);
+  </script>
+</body>
+</html>
