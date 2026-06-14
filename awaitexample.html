@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    async function fetchData(){
+      return "Data Loaded!";
+    }
+    fetchData().then(msg=>document.getElementById("out").innerText=msg);
+  </script>
+</body>
+</html>
