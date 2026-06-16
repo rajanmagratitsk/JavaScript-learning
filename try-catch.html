@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    try {
+      let x = y + 1; // y not defined
+    } catch(err) {
+      document.getElementById("out").innerText = "Error: " + err.message;
+    }
+  </script>
+</body>
+</html>
