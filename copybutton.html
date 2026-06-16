@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="txt" value="Copy me!">
+  <button onclick="copy()">Copy</button>
+
+  <script>
+    function copy(){
+      navigator.clipboard.writeText(document.getElementById("txt").value);
+      alert("Copied!");
+    }
+  </script>
+</body>
+</html>
