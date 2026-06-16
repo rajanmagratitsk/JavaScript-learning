@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="getLoc()">Get Location</button>
+  <p id="out"></p>
+
+  <script>
+    function getLoc(){
+      navigator.geolocation.getCurrentPosition(pos=>{
+        document.getElementById("out").innerText =
+          "Lat: "+pos.coords.latitude+" Long: "+pos.coords.longitude;
+      });
+    }
+  </script>
+</body>
+</html>
