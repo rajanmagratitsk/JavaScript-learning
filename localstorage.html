@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="name" placeholder="Enter name">
+  <button onclick="save()">Save</button>
+  <button onclick="load()">Load</button>
+  <p id="out"></p>
+
+  <script>
+    function save(){ localStorage.setItem("user",document.getElementById("name").value); }
+    function load(){ document.getElementById("out").innerText=localStorage.getItem("user"); }
+  </script>
+</body>
+</html>
