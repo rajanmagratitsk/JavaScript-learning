@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="num" placeholder="Enter number">
+  <button onclick="check()">Check</button>
+  <p id="out"></p>
+  <script>
+    function check(){
+      try {
+        let n=document.getElementById("num").value;
+        if(isNaN(n)) throw new Error("Not a number!");
+        document.getElementById("out").innerText="Valid number: "+n;
+      } catch(err){
+        document.getElementById("out").innerText=err.message;
+      }
+    }
+  </script>
+</body>
+</html>
