@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    try { let n=JSON.parse("abc"); }
+    catch(err){ document.getElementById("out").innerText="Error: "+err.message; }
+    finally { console.log("Execution finished!"); }
+  </script>
+</body>
+</html>
