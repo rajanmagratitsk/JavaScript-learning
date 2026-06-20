@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    let jsonStr='{"name":"Rajan","course":"BCA"}';
+    let obj=JSON.parse(jsonStr); // convert string → object
+    let back=JSON.stringify(obj); // convert object → string
+    document.getElementById("out").innerText=obj.name+" | "+back;
+  </script>
+</body>
+</html>
