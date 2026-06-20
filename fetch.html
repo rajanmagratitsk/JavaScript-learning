@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="load()">Load Data</button>
+  <p id="out"></p>
+  <script>
+    async function load(){
+      let res=await fetch("data.json"); // local JSON file
+      let data=await res.json();
+      document.getElementById("out").innerText=data.name;
+    }
+  </script>
+</body>
+</html>
