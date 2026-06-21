@@ -1,0 +1,14 @@
+<!-- greet.js -->
+export default function(name){ return "Hello "+name; }
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script type="module">
+    import greet from './greet.js';
+    document.getElementById("out").innerText=greet("Rajan");
+  </script>
+</body>
+</html>
