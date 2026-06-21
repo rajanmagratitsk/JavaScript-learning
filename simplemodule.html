@@ -1,0 +1,14 @@
+<!-- math.js -->
+export function add(a,b){ return a+b; }
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script type="module">
+    import {add} from './math.js';
+    document.getElementById("out").innerText="Sum = "+add(5,7);
+  </script>
+</body>
+</html>
