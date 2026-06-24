@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="num" placeholder="Enter phone">
+  <button onclick="check()">Check</button>
+  <p id="out"></p>
+  <script>
+    function check(){
+      let p=/^\d{10}$/; // 10 digits
+      document.getElementById("out").innerText = p.test(document.getElementById("num").value) ? "Valid" : "Invalid";
+    }
+  </script>
+</body>
+</html>
