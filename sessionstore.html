@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="txt" placeholder="Enter session data">
+  <button onclick="save()">Save</button>
+  <button onclick="load()">Load</button>
+  <p id="out"></p>
+  <script>
+    function save(){ sessionStorage.setItem("info",document.getElementById("txt").value); }
+    function load(){ document.getElementById("out").innerText=sessionStorage.getItem("info"); }
+  </script>
+</body>
+</html>
