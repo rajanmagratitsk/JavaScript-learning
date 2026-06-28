@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input type="date" id="dob">
+  <button onclick="calc()">Check Age</button>
+  <p id="out"></p>
+  <script>
+    function calc(){
+      let dob=new Date(document.getElementById("dob").value);
+      let diff=Date.now()-dob.getTime();
+      let age=new Date(diff).getUTCFullYear()-1970;
+      document.getElementById("out").innerText="Age: "+age;
+    }
+  </script>
+</body>
+</html>
