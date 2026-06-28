@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    let count=localStorage.getItem("visits")||0;
+    count++;
+    localStorage.setItem("visits",count);
+    document.getElementById("out").innerText="You visited "+count+" times!";
+  </script>
+</body>
+</html>
