@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    function Student(name){ this.name=name; }
+    Student.prototype.greet=function(){ return "Hello "+this.name; }
+    let s=new Student("Rajan");
+    document.getElementById("out").innerText=s.greet();
+  </script>
+</body>
+</html>
