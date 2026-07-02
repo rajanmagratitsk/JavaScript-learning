@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    function counter(){
+      let count=0;
+      return ()=>++count; // closure keeps "count"
+    }
+    let c=counter();
+    document.getElementById("out").innerText=c()+" | "+c()+" | "+c();
+  </script>
+</body>
+</html>
