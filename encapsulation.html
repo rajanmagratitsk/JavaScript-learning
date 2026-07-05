@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    class Bank {
+      #balance=1000; // private
+      deposit(amount){ this.#balance+=amount; }
+      getBalance(){ return this.#balance; }
+    }
+    let b=new Bank();
+    b.deposit(500);
+    document.getElementById("out").innerText="Balance = "+b.getBalance();
+  </script>
+</body>
+</html>
