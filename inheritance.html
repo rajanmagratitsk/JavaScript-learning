@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    function Animal(type){ this.type=type; }
+    Animal.prototype.sound=function(){ return this.type+" makes sound"; }
+    function Dog(){ Animal.call(this,"Dog"); }
+    Dog.prototype=Object.create(Animal.prototype);
+    let d=new Dog();
+    document.getElementById("out").innerText=d.sound();
+  </script>
+</body>
+</html>
