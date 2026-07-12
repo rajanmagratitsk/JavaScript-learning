@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    function add(a){ return b=>a+b; }
+    let add5=add(5);
+    document.getElementById("out").innerText="5+10 = "+add5(10);
+  </script>
+</body>
+</html>
