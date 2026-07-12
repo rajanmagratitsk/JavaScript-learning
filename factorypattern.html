@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    class Circle { constructor(r){ this.r=r; } area(){ return Math.PI*this.r*this.r; } }
+    class Square { constructor(s){ this.s=s; } area(){ return this.s*this.s; } }
+    function ShapeFactory(type,size){
+      return type==="circle"?new Circle(size):new Square(size);
+    }
+    let shape=ShapeFactory("circle",5);
+    document.getElementById("out").innerText="Area = "+shape.area();
+  </script>
+</body>
+</html>
