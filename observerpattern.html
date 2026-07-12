@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    class Subject {
+      constructor(){ this.observers=[]; }
+      subscribe(fn){ this.observers.push(fn); }
+      notify(msg){ this.observers.forEach(fn=>fn(msg)); }
+    }
+    let subject=new Subject();
+    subject.subscribe(m=>document.getElementById("out").innerText=m);
+    subject.notify("Observer notified!");
+  </script>
+</body>
+</html>
