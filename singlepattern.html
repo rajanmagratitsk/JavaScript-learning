@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="out"></p>
+  <script>
+    class Config {
+      constructor(){
+        if(Config.instance) return Config.instance;
+        this.setting="DarkMode";
+        Config.instance=this;
+      }
+    }
+    let c1=new Config(), c2=new Config();
+    document.getElementById("out").innerText=(c1===c2)?"Same Instance":"Different";
+  </script>
+</body>
+</html>
