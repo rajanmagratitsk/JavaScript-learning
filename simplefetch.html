@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="load()">Load Data</button>
+  <p id="out"></p>
+  <script>
+    async function load(){
+      let res=await fetch("https://api.github.com/zen");
+      let data=await res.text();
+      document.getElementById("out").innerText=data;
+    }
+  </script>
+</body>
+</html>
