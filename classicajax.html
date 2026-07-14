@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="load()">Load Data</button>
+  <p id="out"></p>
+  <script>
+    function load(){
+      let xhr=new XMLHttpRequest();
+      xhr.open("GET","https://api.github.com/zen");
+      xhr.onload=()=>document.getElementById("out").innerText=xhr.responseText;
+      xhr.send();
+    }
+  </script>
+</body>
+</html>
