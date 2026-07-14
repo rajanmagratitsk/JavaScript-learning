@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="load()">Fetch</button>
+  <p id="out"></p>
+  <script>
+    async function load(){
+      try{
+        let res=await fetch("https://api.github.com/users/invalidUser123");
+        if(!res.ok) throw new Error("User not found!");
+        let data=await res.json();
+        document.getElementById("out").innerText=data.login;
+      }catch(err){
+        document.getElementById("out").innerText=err.message;
+      }
+    }
+  </script>
+</body>
+</html>
